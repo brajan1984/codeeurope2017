@@ -1,0 +1,6 @@
+#ALERT fire_every_minute                                                                                      
+#	IF minute(vector(time()) % 2 == 1)                                                                    
+#	LABELS {severity="warning"}                                                                           
+#	ANNOTATIONS {                                                                                         
+#	       summary="Fired every minute"                                                                  
+#	}       
